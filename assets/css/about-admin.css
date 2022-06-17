@@ -1,0 +1,99 @@
+/** Theme about page css */
+
+.green.button {
+    background: none #5cb85c;
+    border-color: #4cae4c;
+    color: #ffffff;
+}
+
+.about-wrap.full-width-layout {
+    max-width: 100%;
+}
+
+.about-wrap .about-description,
+.about-wrap .about-text {
+    font-size: 17px;
+}
+
+.about-wrap h1 {
+    margin: 0;
+}
+
+.about-wrap h2 {
+    text-align: left;
+}
+
+.theme-description .about-text {
+    margin: 0;
+}
+
+.about-theme {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 1.105263157894737em;
+    width: 100%;
+}
+
+.theme-description,
+.theme-screenshot {
+    width: 100%;
+}
+
+.theme-screenshot {
+    order: 1;
+}
+
+.theme-description {
+    margin-top: 1.105263157894737em;
+    order: 2;
+}
+
+.actions {
+    margin-top: 3em;
+}
+
+.col .button {
+    margin-top: 7px;
+}
+
+.about-wrap h2 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.about-wrap .two-col .col {
+    padding: 2em 2em 1em 2em;
+    background-color: #fff;
+    min-width: 45% !important;
+    max-width: 100% !important;
+}
+
+@media screen and (min-width: 872px) {
+    .about-wrap .two-col .col {
+        min-width: 45% !important;
+        max-width: 45% !important;
+    }
+    .about-theme,
+    .about-wrap [class$="-col"] {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .theme-description {
+        margin-top: 0;
+        order: 1;
+        padding-right: 2em;
+        width: 70%;
+    }
+    .theme-screenshot {
+        order: 2;
+        width: 30%;
+    }
+}
